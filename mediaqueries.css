@@ -6,7 +6,7 @@
    
 }
 
-@media (max-width: 426px) {
+@media (max-width: 480px) {
     .title h1 {
         font-size: 25px;
         letter-spacing: 25px;
