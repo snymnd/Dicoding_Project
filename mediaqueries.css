@@ -1,0 +1,24 @@
+/* media query */
+@media (max-width: 710px) {
+    .content, aside  {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 426px) {
+    .title h1 {
+        font-size: 25px;
+        letter-spacing: 25px;
+    }
+    .title h3{
+        margin-top: 10px;
+        word-spacing: 7px;
+        letter-spacing: 4px;
+    }
+
+    .content, aside  {
+        width: 100%;
+    }
+   
+}
