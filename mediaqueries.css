@@ -1,20 +1,38 @@
 /* media query */
-@media (max-width: 710px) {
+@media screen and (max-width: 710px) {
     .content, aside  {
         width: 100%;
     }
    
 }
 
-@media (max-width: 480px) {
+@media all and (max-width: 480px) {
     .title h1 {
         font-size: 25px;
-        letter-spacing: 25px;
+        letter-spacing: 20px;
     }
     .title h3{
-        margin-top: 10px;
-        word-spacing: 7px;
-        letter-spacing: 4px;
+        font-size: 16px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+
+    nav{
+        text-align: left;
+    }
+    .menu{
+        display: block;
+        color: black;
+        background-color: #AAD8D3;
+    }
+    .sidebar   {
+        display: block;
+    }
+    #check:hover > .menu{
+        left: 0;
+    }
+    nav ul li{
+        text-align: left;
     }
 
     .content, aside  {

@@ -132,6 +132,19 @@ nav ul .submenu:hover >.drop-down li:hover{
     background-color: #00ADB5;
 }
 
+.sidebar{
+    padding: 5px;
+    text-align: center;
+    background-color: #00ADB5;
+    display: none;
+}
+.sidebar .fa{
+    float: right;
+}
+#check{
+    display: none;
+}
+
 
 
 /* mid */
