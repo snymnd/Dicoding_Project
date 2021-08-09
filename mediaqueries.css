@@ -20,17 +20,37 @@
     nav{
         text-align: left;
     }
-    .menu{
-        display: block;
-        color: black;
-        background-color: #AAD8D3;
-    }
-    .sidebar   {
+
+    .sidebar {
         display: block;
     }
-    #check:hover > .menu{
+    .navigate .menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: -500px;
+        transition: all 0.2s linear ;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+
+    #check:checked ~ .menu{
         left: 0;
     }
+
+    #check:checked ~ .sidebar #open{
+        display: none;
+    }
+
+    #check:checked ~ .sidebar #close{
+        display: block;
+        float: left;
+        width: 16px;
+        transition: 0.5s linear;
+    }
+
+
     nav ul li{
         text-align: left;
     }

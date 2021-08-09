@@ -94,7 +94,6 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 30px;
 }
 nav ul li{
     font-size: 18px;
@@ -119,8 +118,6 @@ nav ul .submenu:hover >.drop-down {
     background-color:#AAD8D3 ;
     border-radius: 0;
     cursor: pointer;
-
-;
 }
 nav ul .submenu:hover >.drop-down li{
     width: 100%;
@@ -138,9 +135,15 @@ nav ul .submenu:hover >.drop-down li:hover{
     background-color: #00ADB5;
     display: none;
 }
-.sidebar .fa{
-    float: right;
+.sidebar #open{
+    display: block;
+    float: left;
+    width: 16px;
 }
+.sidebar #close{
+    display: none;
+}
+
 #check{
     display: none;
 }
@@ -150,12 +153,16 @@ nav ul .submenu:hover >.drop-down li:hover{
 /* mid */
 main{
     max-width: 1110px;
-    margin: 0 auto;
+    margin-right:  auto;
+    margin-left: auto;
+    margin-top: 30px;
     padding: 0 25px;
+
 }
 
 h1{
     font-size: 26px;
+
 }
 
 h2 {
