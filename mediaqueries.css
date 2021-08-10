@@ -6,15 +6,15 @@
    
 }
 
-@media all and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .title h1 {
         font-size: 25px;
         letter-spacing: 20px;
     }
     .title h3{
-        font-size: 16px;
+        font-size: 14px;
         word-spacing: 5px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     nav{
@@ -34,22 +34,56 @@
     nav ul{
         flex-direction: column;
     }
+    
 
-    #check:checked ~ .menu{
+    #check-one:checked ~ .menu{
         left: 0;
     }
 
-    #check:checked ~ .sidebar #open{
+    #check-one:checked ~ .sidebar #open{
         display: none;
     }
 
-    #check:checked ~ .sidebar #close{
+    #check-one:checked ~ .sidebar #close{
         display: block;
         float: left;
         width: 16px;
-        transition: 0.5s linear;
     }
 
+    #check-two:checked ~.menu .submenu{
+        background-color: #AAD8D3;
+        color: black;
+    }
+
+    #check-two:checked ~.menu .submenu .subsmenu {
+        display: block;
+        color: black;
+    }
+    #check-two:checked ~.menu .submenu .subsmenu .drop-down{
+        width: 100%;
+    }
+
+    #check-two:checked ~.menu .submenu .fa-angle-down{
+        display: none;
+    }
+
+    #check-two:checked ~.menu .submenu .fa-angle-up{
+        display: inline;
+    }
+
+
+    
+    @media (hover:none){
+        nav ul li:active{
+            background-color: #AAD8D3;
+            color: black;
+            cursor: pointer;
+        }
+
+        nav ul .submenu:active >.subsmenu .drop-down li:active{
+            background-color: #00ADB5;
+        }
+    }
 
     nav ul li{
         text-align: left;

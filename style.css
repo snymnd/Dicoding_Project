@@ -55,6 +55,7 @@ body{
     font-size: 18px;
     background-color:#EEEEEE;
     color: black;
+    font-family: 'Josefin sans', sans-serif;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -100,33 +101,44 @@ nav ul li{
     text-align: center;
     padding: 20px 20px;
 }
-nav ul li:hover{
-    background-color: #AAD8D3;
-    color: black;
-    cursor: pointer;
+
+@media (hover:hover){
+    nav ul li:hover{
+        background-color: #AAD8D3;
+        color: black;
+        cursor: pointer;
+    }
+    nav ul .submenu:hover >.subsmenu {
+        display: block;
+    }
+    nav ul .submenu:hover >.subsmenu .drop-down li:hover{
+        background-color: #00ADB5;
+    }
 }
 
-.drop-down{
+.submenu .subsmenu{
     display: none;
 }
-
-nav ul .submenu:hover >.drop-down {
-    position: absolute;
+.drop-down{
     display: block;
+    position: absolute;
     top: 100%;
     margin-left: -20px;
     background-color:#AAD8D3 ;
     border-radius: 0;
     cursor: pointer;
 }
-nav ul .submenu:hover >.drop-down li{
+
+.drop-down li{
     width: 100%;
     padding:20px;
     font-size: 16px;
 }
 
-nav ul .submenu:hover >.drop-down li:hover{
-    background-color: #00ADB5;
+
+
+.submenu .fa-angle-up{
+    display: none;
 }
 
 .sidebar{
@@ -144,7 +156,7 @@ nav ul .submenu:hover >.drop-down li:hover{
     display: none;
 }
 
-#check{
+#check-one, #check-two{
     display: none;
 }
 
