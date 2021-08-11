@@ -1,6 +1,6 @@
 /* media query */
 @media screen and (max-width: 710px) {
-    .content, aside  {
+    .content, aside, .slider  {
         width: 100%;
     }
    
@@ -89,7 +89,7 @@
         text-align: left;
     }
 
-    .content, aside  {
+    .content, aside, .slider  {
         width: 100%;
     }
    

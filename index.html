@@ -18,7 +18,6 @@
             <h3><span style="color:#06cad4">to</span> The Place of Nowhere</h3>
         </div>
         <nav class="navigate">
-
             <input type="checkbox" id="check-one">
             <input type="checkbox" id="check-two">
             
@@ -36,7 +35,7 @@
                     <a href="#"><li>News</li></a>
                     <a href="#"><li>Event</li></a>
                     <label for="check-two">
-                    <li class="submenu">Contact     
+                    <a href="#"><li class="submenu">Contact     
                         <span class="fa fa-angle-down"></span> 
                         <span class="fa fa-angle-up"></span>
                     </label>
@@ -47,7 +46,7 @@
                                 <a href="#"><li><span class="fa fa-instagram"></span> Instagram </li></a>
                             </ul>
                         </div>
-                    </li>
+                    </li> </a>
                 </ul>
             </div>  
         </nav>
@@ -55,6 +54,29 @@
 
     <main class=" cf">
         <h1>Judul H1</h1>
+            <div class="slider">
+                <input type="radio" name="radio-btn" id="rad1">
+                <input type="radio" name="radio-btn" id="rad2">
+                <input type="radio" name="radio-btn" id="rad3">
+                <div class="images">
+                    <div class="image">
+                        <img src="assets/ONIC.jpg" alt="Onic Esport">
+                    </div>
+                    <div class="image">
+                        <img src="assets/AE.jpg" alt="Alter-Ego Esport">
+                    </div>
+                    <div class="image">
+                        <img src="assets/BOOM.jpg" alt="Boom Esport">
+                    </div>
+                </div>
+
+                <div class="slide-manual">
+                    <label for="rad1" class="manual-btn one"></label>
+                    <label for="rad2" class="manual-btn two"></label>
+                    <label for="rad3" class="manual-btn three"></label>
+                </div>
+            </div>  
+
         
         <div class="content cf">
             <article class="card">
@@ -99,5 +121,18 @@
             <a href="#"><li><span class="fa fa-instagram"></span> Instagram </li></a>
         </ul>
     </footer>
+
+    <script type="text/javascript">
+        var count = 1;
+        document.getElementById('rad' + count).checked = true;
+        count++;
+        setInterval(function(){
+          document.getElementById('rad' + count).checked = true;
+          count++;
+          if(count > 3){
+            count = 1;
+          }
+        }, 3500);
+    </script>
 </body>
 </html>
