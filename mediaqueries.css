@@ -83,6 +83,10 @@
         nav ul .submenu:active >.subsmenu .drop-down li:active{
             background-color: #00ADB5;
         }
+
+        footer ul li:active{
+            background-color: #00ADB5;
+        }
     }
 
     nav ul li{
