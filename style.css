@@ -55,7 +55,10 @@ body{
     font-size: 18px;
     background-color:#EEEEEE;
     color: black;
-    font-family: 'Josefin sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -284,11 +287,15 @@ aside {
     padding: 15px;
 }
 
-aside img{
-    width: 100px;
-    height: 100px;
+aside .profilePhoto{
+    width: 80%;
     margin: 10px auto;
     display: block;
+}
+
+aside .profilePhoto img{
+    max-width: 120px;
+    width: 100%;
 }
 
 .biodata {
