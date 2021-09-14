@@ -65,6 +65,14 @@ p{
     border-radius: 5px;
  }
 
+.card:hover{
+    box-shadow: 0 0 8px 1px #00ADB5;
+}
+
+ .homeCard{
+    border-radius: 5px;
+}
+
 header{
     width: 100%;
     display: inline;
