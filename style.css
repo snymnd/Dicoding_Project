@@ -47,7 +47,7 @@ table {
 
 a{
     color: inherit;
-    text-decoration: inherit;
+    text-decoration:inherit;
 }
 
 body{
@@ -98,6 +98,7 @@ header .title{
 
 nav{
     width: 100%;
+    height: min-content;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -115,6 +116,11 @@ nav ul li{
 }
 
 @media (hover:hover){
+    nav ul a:hover{
+        background-color: #AAD8D3;
+        color: black;
+        cursor: pointer;
+    }
     nav ul li:hover{
         background-color: #AAD8D3;
         color: black;
@@ -146,8 +152,6 @@ nav ul li{
     padding:20px;
     font-size: 16px;
 }
-
-
 
 .submenu .fa-angle-up{
     display: none;
@@ -187,82 +191,8 @@ main{
 main h1{
     font-size: 50px;
     text-shadow: 2px 2px #00ADB5;
-    
 }
 
-.slider{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    margin: 15px 0;
-}
-.slider input{
-    display: none;
-}
-.images {
-    width: 300%;
-    height: auto;
-    display: flex;
-}
-
-.images .image{
-    position: relative;
-    width: 100%;
-    margin: 0 5px;
-    transition: 1s;
-}
-.images .image img{
-    max-width: 480px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.slide-manual{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.slide-manual .manual-btn{
-    margin: 5px 0;
-    padding: 5px;
-    border: 2px solid #00ADB5;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.slide-manual .manual-btn:hover{
-    background-color: #AAD8D3;
-}
-
-.slide-manual .manual-btn:not(:last-child){
-    margin-right: 30px;
-}
-
-#rad1:checked ~ .images .image{
-    left: 0;
-}
-  
-#rad2:checked ~ .images .image{
-    left: -33.33%;
-}
-  
-#rad3:checked ~ .images .image{
-    left: -66.66%;
-}
-
-#rad1:checked ~ .slide-manual .one{
-    background-color: #AAD8D3;
-}
-#rad2:checked ~ .slide-manual .two{
-    background-color: #AAD8D3;
-}
-#rad3:checked ~ .slide-manual .three{
-    background-color: #AAD8D3;
-}
 
 h2 {
     font-size: 22px;
@@ -284,7 +214,6 @@ h2 {
     text-align: justify;
     padding: 15px;
     margin-bottom: 15px;
-    
 }
 
 aside {
@@ -351,6 +280,26 @@ footer ul li{
 footer ul li:hover{
     background-color: #00ADB5;
 }
+
+.btn-goUp{
+    text-align: center;
+    position: sticky;
+    bottom: 10px;
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin:10px;
+    padding: 15px 0;
+    background-color: #00acb5a2;
+    border-radius: 50%;
+}
+
+.btn-goUp:hover{
+    background-color: #00acb5;
+    box-shadow: 0px 0px 8px 1px #07dfeb;
+}
+
+
 
 
 /* 

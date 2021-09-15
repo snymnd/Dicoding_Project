@@ -8,13 +8,18 @@
 
 @media screen and (max-width: 480px) {
     .title h1 {
-        font-size: 25px;
-        letter-spacing: 20px;
+        font-size: 24px;
+        letter-spacing: 14px;
     }
     .title h3{
         font-size: 14px;
         word-spacing: 5px;
         letter-spacing: 1px;
+    }
+
+    main h1{
+        font-size: 24px;
+        text-shadow: 2px 2px #00ADB5;
     }
 
     nav{
