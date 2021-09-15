@@ -246,6 +246,24 @@ aside .profilePhoto img{
 }
 
 /* bottom */
+
+.btn-goUp{
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 15px 0;
+    background-color: #00acb5a2;
+    border-radius: 50%;
+}
+
+.btn-goUp:hover{
+    background-color: #00acb5;
+    box-shadow: 0px 0px 8px 1px #07dfeb;
+}
+
 footer {
     background-color: #393E46;
     background-image: url(assets/endless-clouds-rotated.png);
@@ -256,19 +274,25 @@ footer {
     font-size: 14px;
 }
 footer #cpr{
+    text-align: center;
     padding: 5px;
     background-color: #00ADB5;
     border-bottom: 3px solid rgb(15, 7, 27);
 }
 
-footer ul{
+footer .followUs{
+    display: flex;
+    justify-content: center;
     margin-top: 3px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
-footer ul li{
+footer .followUs a{
+    display: block;
+    width: 83px;
     padding: 3px;
     font-size: 13px;
     text-align: center;
@@ -277,27 +301,11 @@ footer ul li{
     border-radius: 5px;
 }
 
-footer ul li:hover{
+footer .followUs a:hover{
     background-color: #00ADB5;
 }
 
-.btn-goUp{
-    text-align: center;
-    position: sticky;
-    bottom: 10px;
-    float: right;
-    width: 45px;
-    height: 45px;
-    margin:10px;
-    padding: 15px 0;
-    background-color: #00acb5a2;
-    border-radius: 50%;
-}
 
-.btn-goUp:hover{
-    background-color: #00acb5;
-    box-shadow: 0px 0px 8px 1px #07dfeb;
-}
 
 
 
