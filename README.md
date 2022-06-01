@@ -1,6 +1,6 @@
 # WebArticle_Project
-for dicoding project 
-<h1> Ini tambahan 1 <h1>
-  ada lagi nih
-<h1> ini udah local branch nih <h1>
-udah
+## dicoding project 
+Requirement:
+1. Using HTML
+2. Using css
+3. Web Responsive
